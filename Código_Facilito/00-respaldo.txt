@@ -1,0 +1,15 @@
+class Usuario:
+    def __init__(self):
+        self.__password = "Este es un secreto"
+
+    def mostrar_password(self):
+        print(self.__password)
+
+user = Usuario()
+print(user.__dict__)
+user.nombre = "Daniel"
+print(user.nombre)
+print(user.__dict__)
+user.__password = "Este ya no es un secret0"
+print(user.__password)
+user.mostrar_password()
